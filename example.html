@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jquery.ocean</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="js/jquery.ocean.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.cloud').ocean({
+					target: 'element',
+					horicontal: true,
+					vertical: false
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<div class="clouds">
+				<img src="images/cloud1.png" class="cloud a" data-ocean-speed="20">
+				<img src="images/cloud2.png" class="cloud b" data-ocean-speed="30">
+				<img src="images/cloud3.png" class="cloud c" data-ocean-speed="10">
+				<img src="images/cloud4.png" class="cloud d" data-ocean-speed="35">
+			</div>
+		</div>
+	</body>
+</html>
